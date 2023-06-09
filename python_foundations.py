@@ -105,3 +105,14 @@ lambda use in password manager with sorted func: sorted(self.dictionary.items(),
 
 #What I'd do different in terms of approach: Review the whole problem, write down assumptions and requirements so when adding "added_on" don't have to restructure whole code.
 
+'''Reflection from chapter 3 feedback:
+- Use audio to explain code! This will also help with pair programming (Navigator).
+- Clearer naming of variables: for dictionaries/lists/ and temp variables e.g. item for item in..../ password for password in....
+- Instead of: (using .get())
+     def get_for_service(self, service_name):
+            if service_name in self.dictionary:
+                return self.dictionary[service_name]['password']
+                #return self.dictionary.get(service_name)
+            else:
+                return None
+  - Use pytest to control workflow!
